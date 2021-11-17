@@ -1,0 +1,27 @@
+#### Kittens API
+
+#### Get All Kittens
+GET http://localhost:3000/api/kittens
+
+#### Get Kitten
+GET http://localhost:3000/api/kittens/6194b000a02ad70f1ecaf14d
+
+#### Add Kittens
+POST http://localhost:3000/api/kittens
+content-type: application/json
+
+{
+    "name": "Smith"
+}
+
+#### Update Kittens
+PUT http://localhost:3000/api/kittens/6194af65644338a364287f49
+content-type: application/json
+
+{
+  "_id": "6194af65644338a364287f49",
+  "name": "Smith Woods"
+}
+
+#### Delete Kittens
+DELETE http://localhost:3000/api/kittens/6194af65644338a364287f49
